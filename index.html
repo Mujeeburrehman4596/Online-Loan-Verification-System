@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Verification System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="floating-card">
+            <div class="card shadow-lg p-4">
+                <div class="card-header text-center bg-transparent">
+                    <h2 class="fw-bold text-white">Loan Verification System</h2>
+                </div>
+                <div class="card-body">
+                    <p class="text-center text-light">Please fill in your details to check your loan eligibility</p>
+                    <form id="loanForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label text-light">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loanAmount" class="form-label text-light">Loan Amount</label>
+                            <input type="number" class="form-control" id="loanAmount" placeholder="Enter loan amount" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="creditScore" class="form-label text-light">Credit Score</label>
+                            <input type="number" class="form-control" id="creditScore" placeholder="Enter credit score (300 - 850)" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="income" class="form-label text-light">Monthly Income</label>
+                            <input type="number" class="form-control" id="income" placeholder="Enter your monthly income" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Verify Loan</button>
+                    </form>
+                    <div class="alert mt-4 d-none" id="resultMessage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

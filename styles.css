@@ -1,0 +1,80 @@
+/* Main background with gradient */
+body, .main-container {
+    height: 100vh;
+    background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Floating card styling */
+.floating-card {
+    width: 100%;
+    max-width: 450px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    border: none;
+    color: white;
+}
+
+/* Input styles */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-color: #ffffff;
+    box-shadow: none;
+    color: #000;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #42a5f5;
+    border-color: #42a5f5;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e88e5;
+    border-color: #1e88e5;
+    transform: translateY(-3px);
+}
+
+/* Form labels */
+.form-label {
+    font-weight: bold;
+}
+
+/* Message alerts */
+#resultMessage.success {
+    background-color: rgba(76, 175, 80, 0.3);
+    color: #4caf50;
+    border-radius: 10px;
+}
+
+#resultMessage.error {
+    background-color: rgba(244, 67, 54, 0.3);
+    color: #f44336;
+    border-radius: 10px;
+}
+
+.alert {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
